@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"stm32-study\startup_stm32f103xe.o"
+"stm32-study\main.o"
+"stm32-study\stm32f1xx_it.o"
+"stm32-study\stm32f1xx_hal_msp.o"
+"stm32-study\stm32f1xx_hal.o"
+"stm32-study\stm32f1xx_hal_rcc.o"
+"stm32-study\stm32f1xx_hal_rcc_ex.o"
+"stm32-study\stm32f1xx_hal_gpio.o"
+"stm32-study\stm32f1xx_hal_dma.o"
+"stm32-study\stm32f1xx_hal_cortex.o"
+"stm32-study\stm32f1xx_hal_pwr.o"
+"stm32-study\stm32f1xx_hal_flash.o"
+"stm32-study\stm32f1xx_hal_flash_ex.o"
+"stm32-study\stm32f1xx_hal_exti.o"
+"stm32-study\system_stm32f1xx.o"
+"stm32-study\gui.o"
+"stm32-study\lcd_driver.o"
+"stm32-study\picture.o"
+--strict --scatter "STM32-Study\STM32-Study.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32-Study.map" -o STM32-Study\STM32-Study.axf
